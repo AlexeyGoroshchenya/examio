@@ -1,0 +1,500 @@
+/* файл общих стилей. подключать ко всем страницам */
+
+@charset "UTF-8";
+
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*============================================================================*/
+
+
+body {
+  background-color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  line-height: 1.2;
+  overflow: hidden;
+  position: relative;
+
+  --red: #FF3E3B;
+  --red-50: #FFEBEF;
+
+  --pink-300: #E222F2;
+  --pink-50: #FDE0FE;
+
+
+  --green: #00C651;
+  --green-900: #00701A;
+  --green-300: #4ADA85;
+  --green-50: #E3F9EA;
+
+  --blue: #0054FF;
+  --blue-50: #E9EBFF;
+
+  --grey: #91919E;
+  --grey-50: #F7F7FF;
+  --grey-100: #F0F0FE;
+  --grey-200: #E6E6F4;
+  --grey-300: #D5D5E3;
+  --grey-700: #696975;
+  --grey-900: #2A2A2F;
+
+  --black: #020218;
+
+  --time:0.5s
+
+}
+
+.header {
+  flex: 0 0 17.75rem;
+  overflow: hidden;
+  height: 100dvh;
+}
+
+.content {
+  flex: 1 1 auto;
+  width: 100%;
+  overflow-y: auto;
+  padding: 1.5rem;
+
+}
+
+.help {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+
+
+.title-big {
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.6px;
+  color: var(--black);
+}
+
+.title-mid {
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: -0.4px;
+  color: var(--black);
+}
+
+.text {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+  color: var(--grey-700);
+}
+
+.hidden{
+  display: none;
+}
+
+/*============================================================================*/
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.header__logo {
+  height: 22px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  background-image: url('../img/icons/header-logo.svg');
+  margin-bottom: 1rem;
+}
+
+.header__titlebox {
+  margin-bottom: 3.125rem;
+}
+
+.header__title {
+  margin-bottom: 1rem;
+}
+
+.header__date {
+  font-weight: 500;
+  color: var(--grey);
+  font-size: 0.875rem;
+  letter-spacing: -0.1px;
+
+}
+
+.header__nav {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.header__nav-list {}
+
+.header__nav-link:not(:last-child) {
+  margin-bottom: 1 rem;
+}
+
+.header__nav-link {
+  padding: 0.5rem;
+}
+
+.header__nav-link a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--grey);
+  padding-right: 0.25rem;
+}
+
+.active.header__nav-link a {
+  color: var(--black);
+}
+
+.header__nav-link svg {
+  fill: var(--grey);
+}
+
+.active.header__nav-link svg {
+  fill: var(--blue);
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.header__user-logo {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.header__user-logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header__user-name {}
+
+/*============================================================================*/
+
+.footer {
+  padding: 40px 24px;
+}
+
+.footer__title {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--black);
+  margin-bottom: 1.5rem;
+}
+
+.footer__license {
+  color: var(--grey-700);
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer__text {
+  font-size: 0.625rem;
+  color: var(--grey);
+}
+
+/*============================================================================*/
+
+.main {
+  min-height: calc(100vh - 1.5rem);
+
+  
+}
+
+/*============================================================================*/
+
+.progress {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+  position: relative;
+  
+}
+.progress-title {}
+
+.progress-percent {}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  background-color: var(--grey-200);
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-result{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  width: 0%;
+  background-color: var(--green);
+  animation: move 10s alternate;
+  -webkit-animation: move 10s alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+
+  to {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+}
+
+/*============================================================================*/
+.breadcrumbs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 2rem;
+}
+.breadcrumbs__link {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--black);
+}
+
+.breadcrumbs__link a{
+  color: var(--grey-700);
+  padding-right: 15px;
+  display: block;
+  position: relative;
+}
+
+.breadcrumbs__link a::after{
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/icons/arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+/*============================================================================*/
+
+.tags {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.75rem;
+  color: var(--blue);
+  padding: 5px 8px;
+  border: 1px solid;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition-duration: var(--time);
+  cursor: pointer;
+}
+
+.tag:hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+/*============================================================================*/
+
+.circle {
+  position: relative;
+
+}
+.outer {
+  height: 96px;
+  width: 96px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  /* border: 1px solid; */
+  
+}
+.inner {
+  border: 3px solid var(--grey-200);
+  height: 86px;
+  width: 86px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+circle{
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 6px;
+  stroke-dasharray: 263;
+}
+

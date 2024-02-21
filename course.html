@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Examio</title>
+	<link rel="shortcut icon" href="./dist/img/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500..600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./dist/css/style.css">
+	
+	<link rel="stylesheet" href="./dist/css/course.css">
+	
+	<script src="./dist/js/main.js" defer></script>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__wrapper">
+			<a href="#" class="header__logo">
+
+			</a>
+			<div class="header__titlebox">
+				<div class="header__title title-big">
+					С возвращением, <span>Екатерина</span>! 👋
+				</div>
+				<div class="header__date">12 мая, четверг</div>
+			</div>
+			<nav class="header__nav">
+				<ul class="header__nav-list">
+					<li class="header__nav-link active">
+						<a href="#">Мои курсы</a>
+						<svg width="12" height="14"  viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"  d="M2.21348 0.857433C3.45583 0.713255 4.71936 0.63916 6 0.63916C7.28064 0.63916 8.54417 0.713255 9.78652 0.857433C10.7848 0.973284 11.5 1.83064 11.5 2.81048V13.1392C11.5 13.3124 11.4103 13.4734 11.2629 13.5645C11.1155 13.6556 10.9314 13.6639 10.7764 13.5864L6 11.1982L1.22361 13.5864C1.06861 13.6639 0.884543 13.6556 0.737134 13.5645C0.589726 13.4734 0.5 13.3124 0.5 13.1392V2.81048C0.5 1.83064 1.21522 0.973284 2.21348 0.857433Z" />
+						</svg>
+					</li>
+					<li class="header__nav-link">
+						<a href="#">Расписание</a>
+						<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.5 7.63916C7.5 7.9153 7.27614 8.13916 7 8.13916C6.72386 8.13916 6.5 7.9153 6.5 7.63916C6.5 7.36302 6.72386 7.13916 7 7.13916C7.27614 7.13916 7.5 7.36302 7.5 7.63916Z" />
+							<path d="M4 9.63916C4.27614 9.63916 4.5 9.4153 4.5 9.13916C4.5 8.86302 4.27614 8.63916 4 8.63916C3.72386 8.63916 3.5 8.86302 3.5 9.13916C3.5 9.4153 3.72386 9.63916 4 9.63916Z" />
+							<path d="M4.5 10.6392C4.5 10.9153 4.27614 11.1392 4 11.1392C3.72386 11.1392 3.5 10.9153 3.5 10.6392C3.5 10.363 3.72386 10.1392 4 10.1392C4.27614 10.1392 4.5 10.363 4.5 10.6392Z" />
+							<path d="M5.5 9.63916C5.77614 9.63916 6 9.4153 6 9.13916C6 8.86302 5.77614 8.63916 5.5 8.63916C5.22386 8.63916 5 8.86302 5 9.13916C5 9.4153 5.22386 9.63916 5.5 9.63916Z" />
+							<path d="M6 10.6392C6 10.9153 5.77614 11.1392 5.5 11.1392C5.22386 11.1392 5 10.9153 5 10.6392C5 10.363 5.22386 10.1392 5.5 10.1392C5.77614 10.1392 6 10.363 6 10.6392Z" />
+							<path d="M7 9.63916C7.27614 9.63916 7.5 9.4153 7.5 9.13916C7.5 8.86302 7.27614 8.63916 7 8.63916C6.72386 8.63916 6.5 8.86302 6.5 9.13916C6.5 9.4153 6.72386 9.63916 7 9.63916Z" />
+							<path d="M7.5 10.6392C7.5 10.9153 7.27614 11.1392 7 11.1392C6.72386 11.1392 6.5 10.9153 6.5 10.6392C6.5 10.363 6.72386 10.1392 7 10.1392C7.27614 10.1392 7.5 10.363 7.5 10.6392Z" />
+							<path d="M8.5 9.63916C8.77614 9.63916 9 9.4153 9 9.13916C9 8.86302 8.77614 8.63916 8.5 8.63916C8.22386 8.63916 8 8.86302 8 9.13916C8 9.4153 8.22386 9.63916 8.5 9.63916Z" />
+							<path d="M9 10.6392C9 10.9153 8.77614 11.1392 8.5 11.1392C8.22386 11.1392 8 10.9153 8 10.6392C8 10.363 8.22386 10.1392 8.5 10.1392C8.77614 10.1392 9 10.363 9 10.6392Z" />
+							<path d="M10 9.63916C10.2761 9.63916 10.5 9.4153 10.5 9.13916C10.5 8.86302 10.2761 8.63916 10 8.63916C9.72386 8.63916 9.5 8.86302 9.5 9.13916C9.5 9.4153 9.72386 9.63916 10 9.63916Z" />
+							<path d="M9 7.63916C9 7.9153 8.77614 8.13916 8.5 8.13916C8.22386 8.13916 8 7.9153 8 7.63916C8 7.36302 8.22386 7.13916 8.5 7.13916C8.77614 7.13916 9 7.36302 9 7.63916Z" />
+							<path d="M10 8.13916C10.2761 8.13916 10.5 7.9153 10.5 7.63916C10.5 7.36302 10.2761 7.13916 10 7.13916C9.72386 7.13916 9.5 7.36302 9.5 7.63916C9.5 7.9153 9.72386 8.13916 10 8.13916Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 0.63916C3.77614 0.63916 4 0.863018 4 1.13916V2.13916H10V1.13916C10 0.863018 10.2239 0.63916 10.5 0.63916C10.7761 0.63916 11 0.863018 11 1.13916V2.13916H11.5C12.6046 2.13916 13.5 3.03459 13.5 4.13916V11.6392C13.5 12.7437 12.6046 13.6392 11.5 13.6392H2.5C1.39543 13.6392 0.5 12.7437 0.5 11.6392V4.13916C0.5 3.03459 1.39543 2.13916 2.5 2.13916H3V1.13916C3 0.863018 3.22386 0.63916 3.5 0.63916ZM12.5 6.63916C12.5 6.08688 12.0523 5.63916 11.5 5.63916H2.5C1.94772 5.63916 1.5 6.08688 1.5 6.63916V11.6392C1.5 12.1914 1.94772 12.6392 2.5 12.6392H11.5C12.0523 12.6392 12.5 12.1914 12.5 11.6392V6.63916Z" />
+							</svg>
+					</li>
+					<li class="header__nav-link">
+						<a href="#">Пробники</a>
+						<svg width="12" height="15" viewBox="0 0 12 15"  xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M4 0.13916H1.75C1.05964 0.13916 0.5 0.698804 0.5 1.38916V12.8892C0.5 13.5795 1.05964 14.1392 1.75 14.1392H10.25C10.9404 14.1392 11.5 13.5795 11.5 12.8892V7.63916C11.5 6.25845 10.3807 5.13916 9 5.13916H7.75C7.05964 5.13916 6.5 4.57952 6.5 3.88916V2.63916C6.5 1.25845 5.38071 0.13916 4 0.13916ZM8.40687 7.42978C8.56737 7.20507 8.51533 6.8928 8.29062 6.73229C8.06591 6.57179 7.75364 6.62383 7.59313 6.84854L5.4362 9.86825L4.35355 8.78561C4.15829 8.59034 3.84171 8.59034 3.64645 8.78561C3.45118 8.98087 3.45118 9.29745 3.64645 9.49271L5.14645 10.9927C5.25037 11.0966 5.39476 11.1496 5.54124 11.1375C5.68772 11.1253 5.82144 11.0494 5.90687 10.9298L8.40687 7.42978Z" />
+							<path d="M6.64746 0.349763C7.17864 0.963479 7.5 1.76379 7.5 2.63916V3.88916C7.5 4.02723 7.61193 4.13916 7.75 4.13916H9C9.87537 4.13916 10.6757 4.46052 11.2894 4.9917C10.6975 2.72574 8.91342 0.941676 6.64746 0.349763Z" />
+						</svg>
+					</li>
+					<li class="header__nav-link">
+						<a href="#">Чат с куратором</a>
+						<svg width="14" height="14" viewBox="0 0 14 14"  xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.27538 0.911314C3.65847 0.731747 5.06864 0.63916 6.50019 0.63916C7.9316 0.63916 9.34163 0.731728 10.7246 0.91126C12.0061 1.07762 12.9189 2.15207 12.9949 3.39579C12.7777 3.32325 12.5475 3.27514 12.3067 3.25515C11.381 3.17832 10.4449 3.13916 9.49998 3.13916C8.55509 3.13916 7.61901 3.17832 6.69332 3.25515C5.12113 3.38564 4 4.7156 4 6.2113V9.06829C4 10.1954 4.63645 11.2276 5.62187 11.7244L3.85355 13.4927C3.71055 13.6357 3.4955 13.6785 3.30866 13.6011C3.12182 13.5237 3 13.3414 3 13.1392V10.4528C2.75766 10.4269 2.51611 10.3983 2.27539 10.367C0.936441 10.1932 0 9.02803 0 7.71425V3.56408C0 2.25031 0.936438 1.08515 2.27538 0.911314Z" />
+							<path d="M9.49998 4.13916C8.58273 4.13916 7.67425 4.17717 6.77603 4.25172C5.74984 4.33689 5 5.2077 5 6.2113V9.06829C5 10.0734 5.75198 10.9447 6.77947 11.0286C7.60871 11.0963 8.44669 11.1333 9.29225 11.1385L11.1464 12.9927C11.2894 13.1357 11.5045 13.1785 11.6913 13.1011C11.8782 13.0237 12 12.8414 12 12.6392V11.0459C12.0736 11.0404 12.1471 11.0346 12.2205 11.0286C13.248 10.9448 14 10.0735 14 9.06835V6.21131C14 5.20771 13.2502 4.3369 12.224 4.25173C11.3257 4.17717 10.4172 4.13916 9.49998 4.13916Z" />
+							</svg>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__user">
+				<div class="header__user-logo">
+					<img src="./dist/img/user-logo.png" alt="user-logo">
+				</div>
+				<div class="header__user-name">E.M.</div>
+				<div class="header__user-show">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3 10.5L8 5.5L13 10.5" stroke="#0054FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<main class="main">
+            <ul class="breadcrumbs">
+                <div class="breadcrumbs__link"><a href="#">Курсы</a></div>
+                <div class="breadcrumbs__link">Подготовка к ЕГЭ по английскому языку</div>
+            </ul>
+            <section class="course">
+                <div class="course__head">
+                    <div class="course__image">
+                        <img src="./dist/img/course-cover-1.jpg" alt="">
+                    </div>
+                    <div class="course__titlebox">
+                        <h1 class="course__title">
+                            Мой курс: <span>Подготовка к ЕГЭ по английскому языку</span>
+                        </h1>
+                        <div class="course__plan">
+                            <span>Тариф: стандартный</span><img src="./dist/img/icons/info.svg" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="course__progressbox">
+                    <div data-progress='10' class="course__progressbox-percent progress">
+                        <div class="progress-title">Прогресс прохождения курса:</div>
+                        <div  class="progress-percent"><span>10</span>%</div>
+                        <div  class="progress-bar">
+                            <div  class="progress-result"></div>
+                        </div>
+                    </div>
+
+                    <div data-progress='10' class="course__progressbox-number progress">
+                        <div class="progress-title">Тестов выполнено:</div>
+                        <div  class="progress-percent">3/16</div>
+                        <div  class="progress-bar">
+                            <div  class="progress-result"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course__dashboard">
+                    <div class="course__tabs">
+                        <div data-state="classes" class="course__tab active">
+                            Занятия
+                        </div>
+                        <div data-state="performance" class="course__tab">
+                            Успеваемость
+                        </div>
+                        <div data-state="samplers" class="course__tab">
+                            Пробники
+                        </div>
+                        <div data-state="schedule" class="course__tab">
+                            Расписание
+                        </div>
+                
+                    </div>
+
+                    <div  data-state="classes" class="course__state hidden">
+                        <div class="course__filters">
+                            <div class="course__filter course__filter-body">
+                                <span ></span> <p>Отображение занятий</p>
+                                <ul class="course__filter-list">
+                                    <li class="course__filter-input"><input type="checkbox" id="viewed"><label for="viewed">Просмотренные</label></li>
+                                    <li class="course__filter-input"><input type="checkbox" id="partially-viewed"><label for="partially-viewed">Частично просмотренные</label></li>
+                                    <li class="course__filter-input"><input type="checkbox" id="unviewed"><label for="unviewed">Непросмотренные</label></li>
+                                </ul>
+                            </div>
+                            <div class="course__filter course__filter-body">
+                                <span ></span> <p>Формат занятия</p>
+                                <ul class="course__filter-list">
+                                    <li class="course__filter-input"><input type="checkbox" id="viewed"><label for="viewed">Теория</label></li>
+                                    <li class="course__filter-input"><input type="checkbox" id="partially-viewed"><label for="partially-viewed">Вебинар</label></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="course__filter course__filter-body">
+                                <span ></span> <p>Модуль</p>
+                                <ul class="course__filter-list">
+                                    <li class="course__filter-input"><input type="checkbox" id="module-1"><label for="module-1">Модуль 1</label></li>
+                                    <li class="course__filter-input"><input type="checkbox" id="module-2"><label for="module-2">Модуль 2</label></li>
+
+                                    
+                                </ul>
+                            </div>
+                            <div class="course__filter course__filter-body">
+                                <span ></span> <p>Навыки</p>
+                                <ul class="course__filter-list">
+                                    <li class="course__filter-input"><input type="checkbox" id="listening"><label for="listening">Аудирование</label></li>
+                                    <li class="course__filter-input"><input type="checkbox" id="grammar"><label for="grammar">Грамматика</label></li>
+                                    <li class="course__filter-input"><input type="checkbox" id="reading"><label for="reading">Чтение</label></li>
+                                    <li class="course__filter-input"><input type="checkbox" id="letter"><label for="letter">Письмо</label></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="course__filter course__filter-clear">Очистить фильтры</div>
+                        </div>
+                    <article class="course__module course__module_first">
+                        <div class="course__module-title title-big">Модуль 0 – Введение</div>
+                        <div class="course__cards">
+                            <div class="course__card">
+                                <div class="course__card-tags tags">
+                                    <a href="#" class="course__card-tag tag">Введение</a>
+                                    <a href="#" class="course__card-tag tag">Online</a>
+                                </div>
+                                <div class="course__card-title title-mid">
+                                    Название урока 1. Что-то про введение
+                                </div>
+                                <div class="course__card-date">2 дек., 19:30 МСК</div>
+                                <!-- для управления цветом статуса использовать дополнительные классы done, inspection, unpassed -->
+                                <div class="course__card-status done"><span>Пройден</span></div>
+                                <div class="course__card-text text">Здесь может быть любой комментарий к занятию</div>
+                                <div class="course__card-button">Посмотреть еще раз</div>
+                            </div>    
+                        </div>
+                    </article>
+                    <article class="course__module course__module_first">
+                        <div class="course__module-title title-big">Модуль 1 – Основы терпения</div>
+                        <div class="course__cards">
+                            <div class="course__card">
+                                <div class="course__card-tags tags">
+                                    <a href="#" class="course__card-tag tag">Text</a>
+                                    <a href="#" class="course__card-tag tag">Online</a>
+                                </div>
+                                <div class="course__card-title title-mid">
+                                    Название урока 1. Что-то про введение
+                                </div>
+                                <div class="course__card-date">2 дек., 19:30 МСК</div>
+                                <div class="course__card-status unpassed"><span>Работа не сдана</span></div>
+                                <div class="course__card-text text">Здесь может быть любой комментарий к занятию</div>
+                                <div class="course__card-button">Посмотреть еще раз</div>
+                            </div>  
+                            <div class="course__card">
+                                <div class="course__card-tags tags">
+                                    <a href="#" class="course__card-tag tag">Text</a>
+                                </div>
+                                <div class="course__card-title title-mid">
+                                    Название урока 1. Что-то про введение
+                                </div>
+                                <div class="course__card-date">2 дек., 19:30 МСК</div>
+                                <div class="course__card-status done"><span>Пройден</span></div>
+                                <div class="course__card-text text">Здесь может быть любой комментарий к занятию</div>
+                                <div class="course__card-button">Посмотреть еще раз</div>
+                            </div>  
+                            <div class="course__card">
+                                <div class="course__card-tags tags">
+                                    <a href="#" class="course__card-tag tag">Text</a>
+                                </div>
+                                <div class="course__card-title title-mid">
+                                    Название урока 1. Что-то про введение
+                                </div>
+                                <div class="course__card-date">2 дек., 19:30 МСК</div>
+                                <div class="course__card-status unpassed"><span>Работа не сдана</span></div>
+                                <div class="course__card-text text">Здесь может быть любой комментарий к занятию</div>
+                                <div class="course__card-button">Посмотреть еще раз</div>
+                            </div>    
+                        </div>
+                    </article>
+                    <article class="course__module course__module_first">
+                        <div class="course__module-title title-big">Модуль 2 – Основы терпения</div>
+                        <div class="course__cards">
+                            <div class="course__card">
+                                <div class="course__card-tags tags">
+                                    <a href="#" class="course__card-tag tag">Text</a>
+                                </div>
+                                <div class="course__card-title title-mid">
+                                    Название урока 1. Что-то про введение
+                                </div>
+                                <div class="course__card-date">2 дек., 19:30 МСК</div>
+                                <div class="course__card-status inspection"><span>На проверке</span></div>
+                                <div class="course__card-text text">Здесь может быть любой комментарий к занятию</div>
+                                <div class="course__card-button">Посмотреть еще раз</div>
+                            </div>  
+                            <div class="course__card">
+                                <div class="course__card-tags tags">
+                                    <a href="#" class="course__card-tag tag">Text</a>
+                                </div>
+                                <div class="course__card-title title-mid">
+                                    Название урока 1. Что-то про введение
+                                </div>
+                                <div class="course__card-date">2 дек., 19:30 МСК</div>
+                                <div class="course__card-status done"><span>Пройден</span></div>
+                                <div class="course__card-text text">Здесь может быть любой комментарий к занятию</div>
+                                <div class="course__card-button">Посмотреть еще раз</div>
+                            </div>  
+                            <div class="course__card">
+                                <div class="course__card-tags tags">
+                                    <a href="#" class="course__card-tag tag">Text</a>
+                                </div>
+                                <div class="course__card-title title-mid">
+                                    Название урока 1. Что-то про введение
+                                </div>
+                                <div class="course__card-date">2 дек., 19:30 МСК</div>
+                                <div class="course__card-status done"><span>Пройден</span></div>
+                                <div class="course__card-text text">Здесь может быть любой комментарий к занятию</div>
+                                <div class="course__card-button">Посмотреть еще раз</div>
+                            </div>    
+                        </div>
+                    </article>
+                    </div>
+
+                    
+
+                    <div  data-state="performance" class="course__state performance">
+                        <div class="performance__titlebox">
+                            <div class="performance__titlebox-text">
+                                <div class="performance__title title-big">
+                                    Средняя оценка по курсу:
+                                </div>
+                                <div class="performance__subtitle">
+                                    Все отлично, продолжай в том же духе 💪
+                                </div>
+                            </div>
+                            <div class="performance__titlebox-image">
+                                <div data-progress="70" class="circle">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div class="percent">70%</div>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="96px" height="96px">
+
+                                        <circle cx="48" cy="48" r="42" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <article class="course__module performance_first">
+                            <div class="course__module-title title-big">
+                                <p>Расчет успеваемости</p>
+                                <span>Скачать отчет</span>
+                            </div>
+                            <div class="performance_tab tab">
+                                <div class="tab-head tab-cell">Задание</div>
+                                <div class="tab-head  tab-cell">Рассчитанный
+                                    вес</div>
+                                <div class="tab-head  tab-cell">Оценка</div>
+                                <div class="tab-head  tab-cell">Диапазон</div>
+                                <div class="tab-head  tab-cell">Проценты</div>
+                                <div class="tab-head  tab-cell">Отзыв</div>
+                                <div class="tab-head  tab-cell">Вклад в итог
+                                    курса</div>
+                                <div class="tab-row-1 tab-col-1 row  tab-cell">
+                                    <div class="row__type">
+                                        Тест
+                                    </div>
+                                    <div class="row__title">
+                                        Входное тестирование
+                                    </div>
+                                </div>
+                                <div class="tab-row-1 tab-col-2  tab-cell">-</div>
+                                <div class="tab-row-1 tab-col-3  tab-cell">3,00</div>
+                                <div class="tab-row-1 tab-col-4  tab-cell">0-10</div>
+                                <div class="tab-row-1 tab-col-5  tab-cell">30%</div>
+                                <div class="tab-row-1 tab-col-6  tab-cell"><span>Оставлен</span> <a href="#">Прочитать</a></div>
+                                <div class="tab-row-1 tab-col-7  tab-cell">-</div>
+
+                                <div class="tab-row-2 tab-col-1  tab-cell ">
+                                    <div class="row__type">
+                                        Задание
+                                    </div>
+                                    <div class="row__title">
+                                        ДЗ. Первый урок
+                                    </div>
+                                </div>
+                                <div class="tab-row-2 tab-col-2  tab-cell">-</div>
+                                <div class="tab-row-2 tab-col-3  tab-cell">65,00</div>
+                                <div class="tab-row-2 tab-col-4  tab-cell">0-100</div>
+                                <div class="tab-row-2 tab-col-5  tab-cell">65%</div>
+                                <div class="tab-row-2 tab-col-6  tab-cell">-</div>
+                                <div class="tab-row-2 tab-col-7  tab-cell">-</div>
+
+                                <div class="tab-row-3 tab-col-1  tab-cell">
+                                    <div class="row__type">
+                                        Задание
+                                    </div>
+                                    <div class="row__title">
+                                        ДЗ. Первый урок
+                                    </div>
+                                </div>
+                                <div class="tab-row-3 tab-col-2  tab-cell">-</div>
+                                <div class="tab-row-3 tab-col-3  tab-cell">65,00</div>
+                                <div class="tab-row-3 tab-col-4  tab-cell">0-100</div>
+                                <div class="tab-row-3 tab-col-5  tab-cell">65%</div>
+                                <div class="tab-row-3 tab-col-6  tab-cell">-</div>
+                                <div class="tab-row-3 tab-col-7  tab-cell">-</div>
+
+                                <div class="tab-row-3 tab-total tab-col-1  tab-cell">
+                                    <div class="row__type">
+                                        Итог
+                                    </div>
+                                    <div class="row__title">
+                                        Итоговая оценка за курс
+                                    </div>
+                                </div>
+                                <div class="tab-row-3 tab-total tab-col-2  tab-cell">-</div>
+                                <div class="tab-row-3 tab-total tab-col-3  tab-cell">65,00</div>
+                                <div class="tab-row-3 tab-total tab-col-4  tab-cell">0-100</div>
+                                <div class="tab-row-3 tab-total tab-col-5  tab-cell">65%</div>
+                                <div class="tab-row-3 tab-total tab-col-6  tab-cell">-</div>
+                                <div class="tab-row-3 tab-total tab-col-7  tab-cell">-</div>
+
+                            </div>
+                        </article>
+
+
+                    </div>
+
+                    <div  data-state="samplers" class="course__state">
+                    </div>
+
+                    <div  data-state="schedule" class="course__state">
+                    </div>
+
+
+                </div>
+            </section>
+		</main>
+		<footer class="footer">
+			<div class="footer__title">© Examio, 2023</div>
+			<div class="footer__license">Образовательные услуги оказываются ООО “ЭКЗАМИО” на основании Лицензии № Л035-01298-77/00179609 от 19 января 2022 года</div>
+			<div class="footer__text">В материалах курса, видео, презентации упоминаются социальные сети Фейсбук / Инстаграм, принадлежащие Meta Platforms Inc., деятельность которой запрещена на территории РФ в части реализации данных социальных сетей на основании осуществления ею экстремистской деятельности</div>
+		</footer>
+
+	</div>
+	<div class="help">
+			<img src="./dist/img/icons/help.png" alt="help">
+	</div>
+
+</body>
+
+</html>
