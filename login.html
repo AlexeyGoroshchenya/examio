@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Examio</title>
+    <link rel="shortcut icon" href="./dist/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/login.css">
+
+
+
+    <script src="./dist/js/main.js" defer></script>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo"></div>
+
+        </div>
+        <div id="lang" class="header__button buttons-header__language">
+            <p>Русский (RU)</p>
+            <div class="buttons-header__language-list">
+                <div class="buttons-header__language-option active">Русский (RU)</div>
+                <div class="buttons-header__language-option">Английский (Eng)</div>
+
+            </div>
+    </header>
+    <main class="main login">
+        <div class="login__body">
+            <div class="login__image">
+                <img src="./dist/img/icons/login.svg" alt="">
+            </div>
+            <div class="login__title">Вход в учетную запись</div>
+            <div id="wrong-data" class="login__notification">Неверный логин или пароль. Пожалуйста, попробуйте заново</div>
+            <div id="session-expired" class="login__notification">Время вашей сессии истекло. Войдите в систему еще раз.</div>
+            
+
+            <div class="login__form">
+                <input type="text" class="login__input" id="login" placeholder="Логин">
+                <input type="password" class="login__input" id="password" placeholder="Пароль">
+                <button type="submit" class="login__send">Вход</button>
+                <button type="submit" class="login__guest">Зайти гостем</button>
+            </div>
+            <div class="login__restore">
+                <div class="login__create">Нет учетной записи? <a href="#">Создать учетную запись</a> </div>
+                <div class="login__forget">Забыли пароль?</div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__text">Уведомление о файлах cookie</div>
+        <div class="footer__link">Открыть</div>
+    </footer>
+
+	<div class="modal modal__err-login">
+		<div class="modal__body">
+			<div class="modal__title">Подтвердить</div>
+			<div class="modal__text text">Вы уже вошли в систему под именем «<span>Дмитрий Тарасов</span>». Вам нужно выйти из системы чтобы войти от имени другого пользователя.</div>
+			<div class="modal__buttons">
+				<div class="modal__button modal__cancel">Отмена</div>
+				<div class="modal__button modal__apply">Выход</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

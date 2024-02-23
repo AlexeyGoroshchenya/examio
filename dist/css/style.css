@@ -1,4 +1,4 @@
-/* файл общих стилей. подключать ко всем страницам */
+/* файл общих стилей. подключать ко всем страницам, кроме тех, которые используют login.css */
 
 @charset "UTF-8";
 
@@ -109,11 +109,19 @@ body {
   --pink-300: #E222F2;
   --pink-50: #FDE0FE;
 
+  --orange: #FE641E;
+  --orange-50: #FBEAE7;
+
+  --purple: #5D00F3;
+  --purple-50: #F5E3FF;
 
   --green: #00C651;
   --green-900: #00701A;
   --green-300: #4ADA85;
   --green-50: #E3F9EA;
+
+  --green-dark: #00897B;
+  --green-dark-50: #E0F2F1;
 
   --blue: #0054FF;
   --blue-50: #E9EBFF;
@@ -128,8 +136,7 @@ body {
 
   --black: #020218;
 
-  --time:0.5s
-
+  --time: 0.5s
 }
 
 .header {
@@ -177,8 +184,96 @@ body {
   color: var(--grey-700);
 }
 
-.hidden{
+.hidden {
   display: none;
+}
+
+
+/*============================================================================*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #0000004a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: var(--time);
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+  height: 100dvh;
+}
+
+.modal__body {
+  width: 656px;
+  padding: 3.5rem;
+  background-color: white;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+.modal__title {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.modal__text {
+  margin-bottom: 2rem;
+}
+
+.modal__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.modal__button {
+  padding: 22px;
+  width: 100%;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  transition-duration: var(--time);
+  cursor: pointer;
+  text-align: center;
+}
+
+.modal__cancel {}
+
+.modal__cancel:hover,
+.modal__cancel:active {
+  background-color: var(--grey-200);
+  transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+}
+
+.modal__apply {
+  background-color: var(--blue);
+  color: white;
+}
+
+.modal__apply:hover {
+  transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
 }
 
 /*============================================================================*/
@@ -311,7 +406,7 @@ body {
 .main {
   min-height: calc(100vh - 1.5rem);
 
-  
+
 }
 
 /*============================================================================*/
@@ -325,8 +420,9 @@ body {
   color: var(--black);
   padding-bottom: 0.5rem;
   position: relative;
-  
+
 }
+
 .progress-title {}
 
 .progress-percent {}
@@ -344,7 +440,7 @@ body {
   overflow: hidden;
 }
 
-.progress-result{
+.progress-result {
   position: absolute;
   top: 0;
   left: 0;
@@ -367,7 +463,7 @@ body {
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
-}
+  }
 
   to {
     transform: translateX(0);
@@ -375,7 +471,7 @@ body {
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
-}
+  }
 }
 
 /*============================================================================*/
@@ -384,20 +480,21 @@ body {
   gap: 6px;
   margin-bottom: 2rem;
 }
+
 .breadcrumbs__link {
   font-weight: 500;
   font-size: 0.875rem;
   color: var(--black);
 }
 
-.breadcrumbs__link a{
+.breadcrumbs__link a {
   color: var(--grey-700);
   padding-right: 15px;
   display: block;
   position: relative;
 }
 
-.breadcrumbs__link a::after{
+.breadcrumbs__link a::after {
   content: '';
   position: absolute;
   top: 4px;
@@ -437,7 +534,7 @@ body {
   cursor: pointer;
 }
 
-.tag:hover{
+.tag:hover {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -451,10 +548,11 @@ body {
   position: relative;
 
 }
+
 .outer {
   height: 96px;
   width: 96px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -463,8 +561,9 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   /* border: 1px solid; */
-  
+
 }
+
 .inner {
   border: 3px solid var(--grey-200);
   height: 86px;
@@ -475,12 +574,12 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   background-color: white;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.circle svg{
+.circle svg {
   position: absolute;
   top: 0;
   left: 0;
@@ -491,10 +590,23 @@ body {
   -o-transform: rotate(-90deg);
 }
 
-circle{
+circle {
   fill: none;
   stroke: var(--green);
   stroke-width: 6px;
   stroke-dasharray: 263;
 }
 
+/* --------------------------- */
+
+@media (max-width: 1200px) {
+
+  .header {
+    flex: 0 0 13rem;
+  }
+
+  .header__wrapper,
+  .content {
+    padding: 1.5rem 0.5rem;
+  }
+}

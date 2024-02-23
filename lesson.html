@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500..600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./dist/css/style.css">
 	
-	<link rel="stylesheet" href="./dist/css/main.css">
+	<link rel="stylesheet" href="./dist/css/course.css">
 	
 	<script src="./dist/js/main.js" defer></script>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -23,9 +23,9 @@
 
 			</a>
 			<div class="header__titlebox">
-				<h1 class="header__title title-big">
+				<div class="header__title title-big">
 					С возвращением, <span>Екатерина</span>! 👋
-				</h1>
+				</div>
 				<div class="header__date">12 мая, четверг</div>
 			</div>
 			<nav class="header__nav">
@@ -86,170 +86,43 @@
 	</header>
 	<div class="content">
 		<main class="main">
-			<section class="available">
-				<div class="available__titlebox">
-					<h2 class="available__title title-big">Доступные курсы</h2>
-					<a href="#" class="available__show text">
-						<span>Показать пройденные</span>
-						<svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
-							<path d="M8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8Z" />
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M0.882274 5.63113C1.87378 2.65047 4.68527 0.5 8.00035 0.5C11.3139 0.5 14.1243 2.64848 15.117 5.62697C15.1973 5.86768 15.1973 6.12812 15.1172 6.36887C14.1257 9.34953 11.3142 11.5 7.99918 11.5C4.68565 11.5 1.87522 9.35153 0.882492 6.37303C0.802265 6.13233 0.802188 5.87188 0.882274 5.63113ZM11.5 6C11.5 7.933 9.933 9.5 8 9.5C6.067 9.5 4.5 7.933 4.5 6C4.5 4.067 6.067 2.5 8 2.5C9.933 2.5 11.5 4.067 11.5 6Z" />
-						</svg>
-					</a>
-				</div>
-				<div class="available__empty hidden">
-					<div class="available__empty-text">Вы пока не начали обучение. Выбирайте курсы и начинайте развиваться с Examio.</div>
-					<div class="available__empty-bg"></div>
-				</div>
-				<div class="available__cards ">
-					<div class="available__card course-card">
-						<div class="course-card__image">
-							<img src="./dist/img/course-cover-1.jpg" alt="">
-						</div>
-						<div class="course-card__textbox">
-							<div class="course-card__tag tags tags">
-								<a href="#" class="course-card__tag tag">Text</a>
-								<a href="#" class="course-card__tag tag">Text</a>
-								<a href="#" class="course-card__tag tag">Text</a>
-							</div>
-							<div class="course-card__title title-mid">ЕГЭ по математике на 101 балл (Название курса)</div>
-							<div class="course-card__text text">Просто маркетологи сказали, что тут нужно описание</div>
-							<div data-progress='40' class="course-card__progress progress">
-								<div class="progress-title">Пройдено:</div>
-								<div  class="progress-percent"><span>40</span>%</div>
-								<div  class="progress-bar">
-									<div  class="progress-result"></div>
-								</div>
-							</div>
-							<div class="course-card__status">
-								<div class="course-card__status-title">Оплачен до:</div>
-								<div class="course-card__status-date">12.05.24</div>
-								<a href="#" class="course-card__status-link">Продлить</a>
-							</div>
-							<a href="#" class="course-card__button">Узнать больше</a>
-						</div>
-					</div>
-					<div class="available__card course-card">
-						<div class="course-card__image">
-							<img src="./dist/img/course-cover-1.jpg" alt="">
-						</div>
-						<div class="course-card__textbox">
-							<div class="course-card__tag tags tags">
-								<a href="#" class="course-card__tag tag">Text</a>
-								<a href="#" class="course-card__tag tag">Text</a>
-								<a href="#" class="course-card__tag tag">Text</a>
-							</div>
-							<div class="course-card__title title-mid">ЕГЭ по математике на 101 балл (Название курса)</div>
-							<div class="course-card__text text">Просто маркетологи сказали, что тут нужно описание</div>
-							<div data-progress='100' class="course-card__progress progress">
-								<div class="progress-title">Пройдено:</div>
-								<div  class="progress-percent"><span>100</span>%</div>
-								<div  class="progress-bar">
-									<div  class="progress-result"></div>
-								</div>
-							</div>
-							<div class="course-card__status">
-								<div class="course-card__status-title">Оплачен до:</div>
-								<div class="course-card__status-date">12.05.24</div>
-								<a href="#" class="course-card__status-link">Продлить</a>
-							</div>
-							<a href="#" class="course-card__button">Узнать больше</a>
-						</div>
-					</div>
-					<div class="available__card course-card">
-						<div class="course-card__image">
-							<img src="./dist/img/course-cover-1.jpg" alt="">
-						</div>
-						<div class="course-card__textbox">
-							<div class="course-card__tag tags tags">
-								<a href="#" class="course-card__tag tag">Text</a>
-								<a href="#" class="course-card__tag tag">Text</a>
-								<a href="#" class="course-card__tag tag">Text</a>
-							</div>
-							<div class="course-card__title title-mid">ЕГЭ по математике на 101 балл (Название курса)</div>
-							<div class="course-card__text text">Просто маркетологи сказали, что тут нужно описание</div>
-							<div data-progress='30' class="course-card__progress progress">
-								<div class="progress-title">Пройдено:</div>
-								<div  class="progress-percent"><span>30</span>%</div>
-								<div  class="progress-bar">
-									<div  class="progress-result"></div>
-								</div>
-							</div>
-							<div class="course-card__status">
-								<div class="course-card__status-title">Оплачен до:</div>
-								<div class="course-card__status-date">12.05.24</div>
-								<a href="#" class="course-card__status-link">Продлить</a>
-							</div>
-							<a href="#" class="course-card__button">Узнать больше</a>
-						</div>
-					</div>
-					<div class="available__card course-card">
-						<div class="course-card__image">
-							<img src="./dist/img/course-cover-1.jpg" alt="">
-						</div>
-						<div class="course-card__textbox">
-							<div class="course-card__tag tags tags">
-								<a href="#" class="course-card__tag tag">Text</a>
-								<a href="#" class="course-card__tag tag">Text</a>
-								<a href="#" class="course-card__tag tag">Text</a>
-							</div>
-							<div class="course-card__title title-mid">ЕГЭ по математике на 101 балл (Название курса)</div>
-							<div class="course-card__text text">Просто маркетологи сказали, что тут нужно описание</div>
-							<div data-progress='50' class="course-card__progress progress">
-								<div class="progress-title">Пройдено:</div>
-								<div  class="progress-percent"><span>50</span>%</div>
-								<div  class="progress-bar">
-									<div  class="progress-result"></div>
-								</div>
-							</div>
-							<div class="course-card__status">
-								<div class="course-card__status-title">Оплачен до:</div>
-								<div class="course-card__status-date">12.05.24</div>
-								<a href="#" class="course-card__status-link">Продлить</a>
-							</div>
-							<a href="#" class="course-card__button">Узнать больше</a>
-						</div>
-					</div>
+            <ul class="breadcrumbs">
+                <div class="breadcrumbs__link"><a href="#">Курсы</a></div>
+                <div class="breadcrumbs__link"><a href="#">Подготовка к ЕГЭ по английскому языку</a></div>
+                <div class="breadcrumbs__link"><a href="#">Модуль 1</a></div>
+                <div class="breadcrumbs__link">Занятие 1</div>
+            </ul>
+            <section class="lesson">
+                <div class="lesson__titlebox">
+                    <div class="lesson__current">
+                        <h1 class="lesson__title">Занятие 1</h1>
+                        <div class="lesson__button">Отметить выполненным</div>
+                    </div>
+                    <div class="lesson__next">
+                        <span>Далее:</span> 
+                        <a href="#">Занятие 2. Теория чего-то там</a>
+                    </div>
+                </div>
+                <article class="lesson__body">
+                    <div class="lesson__question">
+                        <div class="lesson__question-title">
+                            Заголовок секции 1
+                        </div>
+                        <div class="lesson__text">
+                            Сегодня мы продолжим изучение темы местоимения. Вы уже знаете личные местоимения, а сегодня мы разберем другие их виды: притяжательные, возвратные и указательные, а также предлоги места и времени.
+                        </div>
+                        <div class="lesson__video">
+                            
+                        </div>
 
 
 
 
-				</div>
-			</section>
-			<section class="recommended">
-				<h2 class="recommended__title title-big">Рекомендованные курсы</h2>
-				<div class="recommended__empty hidden">Рекомендуемых курсов пока что нет.</div>
-				<div class="recommended__cards">
-					<div class="recommended__card course-card">
-						<div class="course-card__image">
-							<img src="./dist/img/course-cover-1.jpg" alt="">
-						</div>
-						<div class="course-card__textbox">
-							<div class="course-card__tag tags tags">
-								<a href="#" class="course-card__tag tag">Text</a>
-								<a href="#" class="course-card__tag tag">Text</a>
-								<a href="#" class="course-card__tag tag">Text</a>
-							</div>
-							<div class="course-card__title title-mid">ЕГЭ по математике на 101 балл (Название курса)</div>
-							<div class="course-card__text text">Просто маркетологи сказали, что тут нужно описание</div>
-							<div data-progress='80' class="course-card__progress progress">
-								<div class="progress-title">Пройдено:</div>
-								<div  class="progress-percent"><span>80</span>%</div>
-								<div  class="progress-bar">
-									<div  class="progress-result"></div>
-								</div>
-							</div>
-							<div class="course-card__status">
-								<div class="course-card__status-title">Оплачен до:</div>
-								<div class="course-card__status-date">12.05.24</div>
-								<a href="#" class="course-card__status-link">Продлить</a>
-							</div>
-							<a href="#" class="course-card__button">Узнать больше</a>
-						</div>
-					</div>
-				</div>
+                    </div>
+                </article>
 
-			</section>
+
+            </section>
 		</main>
 		<footer class="footer">
 			<div class="footer__title">© Examio, 2023</div>
@@ -261,8 +134,6 @@
 	<div class="help">
 			<img src="./dist/img/icons/help.png" alt="help">
 	</div>
-
-
 	<div class="modal modal__logout">
 		<div class="modal__body">
 			<div class="modal__title">Вы уверены, что хотите выйти из аккаунта?</div>

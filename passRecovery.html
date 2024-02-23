@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Examio</title>
+    <link rel="shortcut icon" href="./dist/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/login.css">
+
+
+
+    <script src="./dist/js/main.js" defer></script>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo"></div>
+
+        </div>
+        <div id="lang" class="header__button buttons-header__language">
+            <p>Русский (RU)</p>
+            <div class="buttons-header__language-list">
+                <div class="buttons-header__language-option active">Русский (RU)</div>
+                <div class="buttons-header__language-option">Английский (Eng)</div>
+
+            </div>
+    </header>
+    <main class="main recovery">
+        <div class="recovery__body">
+            <div class="recovery__stage recovery__stage_1 active">
+                <div class="recovery__title">Восстановление доступа</div>
+                <div class="recovery__text text">Для сброса пароля укажите ниже Ваш логин или адрес электронной почты. Если Ваша учетная запись есть в базе данных, на Ваш адрес электронной почты будет отправлено письмо, содержащее инструкции по восстановлению доступа.</div>
+                <div class="recovery__search recovery__search_login">
+                    <div class="recovery__search-title">Поиск по логину</div>
+                    <form class="recovery__search-form">
+                        <input type="text" class="recovery__search-input" placeholder="Ваш логин">
+                        <button type="submit" class="recovery__search-button">Найти</button>
+                    </form>
+                </div>
+                <div class="recovery__search recovery__search_email">
+                    <div class="recovery__search-title">Поиск по адресу электронной почты</div>
+                    <form class="recovery__search-form">
+                        <input type="text" class="recovery__search-input" placeholder="Адрес электронной почты">
+                        <button type="submit" class="recovery__search-button">Найти</button>
+                    </form>
+                </div>
+            </div>
+            <div class="recovery__stage recovery__stage_2 ">
+                <div class="recovery__title">Если Вы указали верный логин или адрес электронной почты, то Вам будет отправлено электронное письмо.</div>
+                <div class="recovery__text text">Оно содержит простые инструкции для завершения процедуры изменения пароля. Если после этого возникнут какие-то сложности, свяжитесь с администратором сайта.</div>
+                <div class="recovery__search-finish">Продолжить</div>
+            </div>
+        </div>
+            
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__text">Уведомление о файлах cookie</div>
+        <div class="footer__link">Открыть</div>
+    </footer>
+
+    <div class="modal modal__err-create">
+		<div class="modal__body">
+			<div class="modal__title">Подтвердить</div>
+			<div class="modal__text text">Вы не можете создать новую учетную запись, поскольку Вы уже зашли в систему как «<span>Дмитрий Тарасов</span>».</div>
+			<div class="modal__buttons">
+				<div class="modal__button modal__cancel">Отмена</div>
+				<div class="modal__button modal__apply">Выход</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

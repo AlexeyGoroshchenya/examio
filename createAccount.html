@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Examio</title>
+    <link rel="shortcut icon" href="./dist/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/login.css">
+
+
+
+    <script src="./dist/js/main.js" defer></script>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo"></div>
+
+        </div>
+        <div id="lang" class="header__button buttons-header__language">
+            <p>Русский (RU)</p>
+            <div class="buttons-header__language-list">
+                <div class="buttons-header__language-option active">Русский (RU)</div>
+                <div class="buttons-header__language-option">Английский (Eng)</div>
+
+            </div>
+    </header>
+    <main class="main cteate">
+        <div class="cteate-acc">
+
+            <div class="cteate-acc__back">Назад</div>
+            <div class="cteate-acc__title">Новая учетная запись</div>
+
+            <div class="cteate-acc__form">
+
+
+                <div class="login__input cteate-acc__input">
+                    <input type="text" required class="input-required" name="login" id="login" onblur="checkValue(event)">
+                    <label for="login">Логин</label>
+                </div>
+                
+                <div class="cteate-acc__password">
+                    <div class="login__input cteate-acc__input">
+                        <input type="password" required class="input-required" name="password" id="password" onblur="checkValue(event)">
+                        <label for="password">Пароль</label>
+                    </div>
+                    
+                    <div class="cteate-acc-pass-requirements">
+                        Пароль должен содержать не менее 8 символов. Обязательные символы: цифра, строчная буква, прописная буква, специальный символ (*, - или #). 
+                    </div>
+                </div>
+                
+                <div class="login__input cteate-acc__input has-value">
+                    <input type="text" required class="input-required" name="email" id="email" value="example@yandex.ru" onblur="checkValue(event)">
+                    <label for="email">Адрес электронной почты</label>
+                </div>
+                <div class="login__input cteate-acc__input">
+                    <input type="text" required class="input-required" name="email-confirm" id="email-confirm" onblur="checkValue(event)">
+                    <label for="email-confirm">Адрес электронной почты (еще раз)</label>
+                </div>
+                <div class="login__input cteate-acc__input">
+                    <input type="text" required class="input-required" name="name" id="name" onblur="checkValue(event)">
+                    <label for="name">Имя</label>
+                </div>
+                <div class="login__input cteate-acc__input">
+                    <input type="text" required class="input-required" id="surname" onblur="checkValue(event)">
+                    <label for="surname">Фамилия</label>
+                </div>
+                
+
+
+                <input type="text"  class="login__input" id="city" placeholder="Город">
+                
+                <div class="login__input cteate-acc__country">
+                    <p class="cteate-acc__country-button">Страна</p>
+                    <div class="cteate-acc__country-list">
+
+
+                    </div>
+                </div>
+
+                <button type="submit" class="login__send">Создать аккаунт</button>
+
+            </div>
+           
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__text">Уведомление о файлах cookie</div>
+        <div class="footer__link">Открыть</div>
+    </footer>
+
+    <div class="modal modal__err-create">
+		<div class="modal__body">
+			<div class="modal__title">Подтвердить</div>
+			<div class="modal__text text">Вы не можете создать новую учетную запись, поскольку Вы уже зашли в систему как «<span>Дмитрий Тарасов</span>».</div>
+			<div class="modal__buttons">
+				<div class="modal__button modal__cancel">Отмена</div>
+				<div class="modal__button modal__apply">Выход</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

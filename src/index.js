@@ -1,5 +1,8 @@
 import { progressBarRender } from './modules/progressBarRender';
 import { course } from './modules/course';
+import { langSelect } from './modules/langSelect';
+import { login } from './modules/login';
+import { modal } from './modules/modal';
 
 
 // рендеринг анимации прогресса для карточки курса на главной странице и на странице курса
@@ -10,3 +13,10 @@ progressBarRender();
 
 //скрипты для страницы курса
 course();
+
+//выбор языка, используется на страницах логина и регистрации
+langSelect()
+//рендеринг списка стран и слушатели событий инпутов, используется на страницах логина и регистрации
+login()
+//закрытие модальных окон. используется везде
+modal()
